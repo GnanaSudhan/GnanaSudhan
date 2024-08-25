@@ -19,8 +19,7 @@ abc.table1 as h1 inner join abc.table2 as h2
     where h1.name = :h_name
 order by h1.h_id desc
 end;
-  EXCEPTION
-WHEN OTHERS THEN
-  Raise
+  exception
+     when others then raise;
 end;
 
